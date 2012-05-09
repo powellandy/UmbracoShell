@@ -1,0 +1,5 @@
+C:\development\Umbraco5Shell\UmbracoShell\UmbracoShell.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\development\Umbraco5Shell\UmbracoShell\UmbracoShell.Web\bin\UmbracoShell.Web.dll
+C:\development\Umbraco5Shell\UmbracoShell\UmbracoShell.Web\bin\UmbracoShell.Web.pdb
+C:\development\Umbraco5Shell\UmbracoShell\UmbracoShell.Web\obj\Debug\UmbracoShell.Web.dll
+C:\development\Umbraco5Shell\UmbracoShell\UmbracoShell.Web\obj\Debug\UmbracoShell.Web.pdb

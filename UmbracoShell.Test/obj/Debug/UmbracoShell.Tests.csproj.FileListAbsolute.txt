@@ -1,0 +1,11 @@
+C:\development\Umbraco5Shell\UmbracoShell\UmbracoShell.Test\bin\Debug\Umbraco5Base.Tests.dll.config
+C:\development\Umbraco5Shell\UmbracoShell\UmbracoShell.Test\bin\Debug\Umbraco5Base.Tests.dll
+C:\development\Umbraco5Shell\UmbracoShell\UmbracoShell.Test\bin\Debug\Umbraco5Base.Tests.pdb
+C:\development\Umbraco5Shell\UmbracoShell\UmbracoShell.Test\bin\Debug\nunit.framework.dll
+C:\development\Umbraco5Shell\UmbracoShell\UmbracoShell.Test\bin\Debug\nunit.mocks.dll
+C:\development\Umbraco5Shell\UmbracoShell\UmbracoShell.Test\bin\Debug\nunit.framework.xml
+C:\development\Umbraco5Shell\UmbracoShell\UmbracoShell.Test\bin\Debug\Umbraco.Framework.pdb
+C:\development\Umbraco5Shell\UmbracoShell\UmbracoShell.Test\bin\Debug\Umbraco.Framework.Testing.pdb
+C:\development\Umbraco5Shell\UmbracoShell\UmbracoShell.Test\obj\Debug\ResolveAssemblyReference.cache
+C:\development\Umbraco5Shell\UmbracoShell\UmbracoShell.Test\obj\Debug\Umbraco5Base.Tests.dll
+C:\development\Umbraco5Shell\UmbracoShell\UmbracoShell.Test\obj\Debug\Umbraco5Base.Tests.pdb

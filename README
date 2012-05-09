@@ -1,0 +1,57 @@
+This guide explains how to install Umbraco 5 locally and bootstrap the
+development process to get you up and running.
+
+This guide uses the following software environment:
+
+Windows 7 64-bit
+Git
+IIS 7
+Visual Studio 2010 SP1
+Microsoft MVC 3 Platform
+MS SQL Server 2008
+
+This project will live in a repository here:
+git@github.com:jeffstagg/UmbracoShell.git
+(link active as of May 9, 2012)
+
+Pull the repository to your local machine.
+
+After pulling the repository, we'll set up our site in IIS.
+Go into IIS and create a new website with the name of your choice.
+The physical path should be set to the location ~/UmbracoShell.Web
+If you put the repo in c:\dev\, your selected folder should be:
+c:\dev\UmbracoShell\UmbracoShell.Web
+
+Choose to start the site immediately.
+Now open your Application Pool and set IIS to run the site as a .Net 4.0 site.
+
+Next we'll need to set up the database. Open SQL Server Management Studio and
+connect to your server. Create a new database by right-clicking the Databases
+directory and choosing Restore Database. In the dialog, enter a name for your
+database in the To Database field. Select to restore from device, and add the
+.bak file included in this repository. This database has a user named 'admin'
+whose password is 'admin'. You should create a new password for 'admin' after
+this database is installed.
+Click 'ok' to install the database.
+
+Open your solution in Visual Studio 2010, and build. If any references are
+faulty, they will be stored in the ~/ReferenceDLLs directory to re-reference.
+
+Now open your ~/UmbracoShell.Web/connectionString.config and look for the connectionStrings
+tag. Under the name "nhibernate.ConnString", set the connection string to connect
+to your Umbraco database.
+
+When running in Visual Studio 2010, I've had mixed results in running a local
+version of IIS, vs using IIS express through the VS project. Do not use the
+default server built into VS; there are problems getting Umbraco to run on it.
+If you run this project locally on IIS7, you can begin using the package by
+browsing to the URL "//localhost/umbraco". If you get server errors, you may want
+to try using IIS Express through Visual Studio 2010. To do so, right-click on the
+Umbraco5Base.Web project in the solution explorer, and select Properties.
+Choose the Web tab, and under Servers, select the Use Local IIS Web Server
+radio button, and choose "Use IIS Express", leaving the Project Url to default.
+Now run the project through Visual Studio, and browse to ~/umbraco to begin
+using the umbraco admin panel.
+
+When logging into Umbraco, the username / password is "admin" / "admin". You may
+now begin building your site.

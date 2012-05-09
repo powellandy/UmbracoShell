@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="utf-8" />
+    <title>
+     @if (IsSectionDefined("PageTitle"))
+	 {
+		@RenderSection("PageTitle", required: false)
+	 }
+     else
+     {
+        @ViewBag.Title
+     }</title>
+    <meta name="description" content="">
+	<meta name="author" content="">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    <!-- enter global styles here -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/Styles/base.css")" />
+	<link rel="stylesheet" href="@Url.Content("~/Content/Styles/skeleton.css")" />
+	<link rel="stylesheet" href="@Url.Content("~/Content/Styles/layout.css")" />
+
+    <!-- page-specific styles loaded here. DO NOT define them in the Layout; put them into the page template under the 'styles' sections -->
+@*    @RenderSection("styles", false)*@
+</head>
+
+<body>
+
+   
+    @RenderBody()
+
+
+    <!-- enter global javascripts here -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="@Url.Content("~/Scripts/ie8.js")" type="text/javascript"></script>
+
+    <!-- page-specific javascripts loaded here. DO NOT define them in the Layout; put them into the page template under the 'scripts' section -->
+    @RenderSection("scripts", false)
+</body>
