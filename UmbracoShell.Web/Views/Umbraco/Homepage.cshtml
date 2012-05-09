@@ -17,8 +17,12 @@
     -->
 
 }
+
+@section Styles
+{
+
+}
  <!-- main header -->
-    <h1>Page Title</h1>
 	
 	<nav> 
 		@Html.Partial("Navigation")
@@ -26,6 +30,13 @@
 
     <h5>Version 1.1</h5>
 	<hr />
+
+    <h1>CONTENT</h1>
+    <span>
+    @Umbraco.Field(Model, "bodyText")
+    
+    </span>
+
 
 	<div class="one-third column">
 		<h3>About Skeleton?</h3>
