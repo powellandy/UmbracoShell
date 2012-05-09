@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Umbracoshell : Umbraco 5 base template with NUnit test project and Skeleton framework for VS 2010" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Umbracoshell</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jeffstagg/UmbracoShell">View on GitHub</a>
+
+          <h1 id="project_title">Umbracoshell</h1>
+          <h2 id="project_tagline">Umbraco 5 base template with NUnit test project and Skeleton framework for VS 2010</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/jeffstagg/UmbracoShell/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/jeffstagg/UmbracoShell/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>Please view the following README before downloading code:</p>
+
+<p>This guide explains how to install Umbraco 5 locally and bootstrap the
+development process to get you up and running.</p>
+
+<p>This guide uses the following software environment:</p>
+
+<p>Windows 7 64-bit
+Git
+IIS 7
+Visual Studio 2010 SP1
+Microsoft MVC 3 Platform
+MS SQL Server 2008</p>
+
+<p>This project will live in a repository here:
+<a href="mailto:git@github.com">git@github.com</a>:jeffstagg/UmbracoShell.git
+(link active as of May 9, 2012)</p>
+
+<p>Pull the repository to your local machine.</p>
+
+<p>After pulling the repository, we'll set up our site in IIS.
+Go into IIS and create a new website with the name of your choice.
+The physical path should be set to the location ~/UmbracoShell.Web
+If you put the repo in c:\dev\, your selected folder should be:
+c:\dev\UmbracoShell\UmbracoShell.Web</p>
+
+<p>Choose to start the site immediately.
+Now open your Application Pool and set IIS to run the site as a .Net 4.0 site.</p>
+
+<p>Next we'll need to set up the database. Open SQL Server Management Studio and
+connect to your server. Create a new database by right-clicking the Databases
+directory and choosing Restore Database. In the dialog, enter a name for your
+database in the To Database field. Select to restore from device, and add the
+.bak file included in this repository. This database has a user named 'admin'
+whose password is 'admin'. You should create a new password for 'admin' after
+this database is installed.
+Click 'ok' to install the database.</p>
+
+<p>Open your solution in Visual Studio 2010, and build. If any references are
+faulty, they will be stored in the ~/ReferenceDLLs directory to re-reference.</p>
+
+<p>Now open your ~/UmbracoShell.Web/connectionString.config and look for the connectionStrings
+tag. Under the name "nhibernate.ConnString", set the connection string to connect
+to your Umbraco database.</p>
+
+<p>When running in Visual Studio 2010, I've had mixed results in running a local
+version of IIS, vs using IIS express through the VS project. Do not use the
+default server built into VS; there are problems getting Umbraco to run on it.
+If you run this project locally on IIS7, you can begin using the package by
+browsing to the URL "//localhost/umbraco". If you get server errors, you may want
+to try using IIS Express through Visual Studio 2010. To do so, right-click on the
+Umbraco5Base.Web project in the solution explorer, and select Properties.
+Choose the Web tab, and under Servers, select the Use Local IIS Web Server
+radio button, and choose "Use IIS Express", leaving the Project Url to default.
+Now run the project through Visual Studio, and browse to ~/umbraco to begin
+using the umbraco admin panel.</p>
+
+<p>When logging into Umbraco, the username / password is "admin" / "admin". You may
+now begin building your site.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Umbracoshell maintained by <a href="https://github.com/jeffstagg">jeffstagg</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
